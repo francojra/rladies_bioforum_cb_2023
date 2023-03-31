@@ -1,0 +1,403 @@
+---
+title: "Importância da R-Ladies para o desenvolvimento científico e social"
+subtitle: ""
+author: "Biofórum do Centro de Biociências - UFRN"
+institute: "Ministrante: Jeanne Franco"
+date: ""
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+        highlightStyle: solarized-dark
+        highlightLines: false
+        countIncrementalSlides: false
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo(primary_color = "#061b1d", secondary_color = "#db82f5",
+  header_font_google = google_font("Quicksand", "300"),
+  text_font_google   = google_font("Work Sans", "300", "300i"),
+  code_font_google   = google_font("IBM Plex Mono")
+)
+```
+
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+background-image: url(R-version.png)
+background-size: 85px
+background-position: 95% 5%
+
+# Minha formação e experiência com o R
+
+### - Doutorado em Ecologia (UFRN);
+### - Colaboradora da empresa Beta Analítica;
+### - Coorganizadora da comunidade R-Ladies Natal;
+### - Pacotes: rmarkdown e tidyverse (ggplot2, dplyr, tidyr, stringr, readr, purrr, tibble e forcats);
+### - Contatos: [Github](https://github.com/francojra) e [Instagram](https://www.instagram.com/jeanneefranco/). 
+
+---
+
+# Sobre a R-Ladies Global
+
+### - Organização mundial com a missão de **promover a diversidade de gênero na comunidade de estatística do R** através de meetups, mentorias e colaborações de pessoas ao redor do mundo;
+### - A comunidade do R **sofre com a sub-representação de grupos de gêneros minoritários** como mulheres cis e trans, homens trans e não binários.
+
+```{r message=FALSE, warning=FALSE, , out.width="63%", out.height="245", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","rladies.jpg")) 
+```
+
+---
+
+# Objetivos da R-Ladies Global
+
+### - **Suporte a entusiastas de gêneros minoritários para que eles desenvolvam o potencial de programação** na liguagem R;
+
+### - **Encorajar, inspirar e empoderar** pessoas de gêneros atualmente sub-representados na comunidade do R;
+
+### - Comunidade onde todas se sintam aceitas e seguras para **compartilhar conhecimentos**;
+
+### - Podemos ajudar as mulheres a fazer uma ciência melhor através de **bonade, colaboração, respeito e equidade**. 
+
+```{r message=FALSE, warning=FALSE, , out.width="22%", out.height="142", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","R-LadiesGlobal.png")) 
+```
+
+---
+
+# História da R-Ladies
+
+### - O R-Ladies foi criado por **Gabriela de Queiroz** no dia 1 de outubro de 2012. Ela teve a iniciativa após participar de eventos e ter apredido muito de graça;
+
+### - Se sentia muito intimidada por ser mulher e estrangeira;
+
+### - Apoio do patrocínio da **R-Consortium** para apoiar e encorajar a expansão global da organização R-Ladies;
+
+```{r message=FALSE, warning=FALSE, , out.width="50%", out.height="245", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","gab.png")) 
+```
+
+---
+
+# Uso do R na ciência
+
+### - O R é uma **linguagem amigável, gratuita e de código aberto**, o que permite a democratização do conhecimento;
+
+### - O R é usado em **diversas áreas** de e de grande importância para pesquisa: ciências exatas, ciências biológicas, engenharias, ciências da saúde, ciências agrárias, letras e ciências humanas. 
+
+### - O R pode ser a primeira linguagem de programação a se tornar sem lacunas de gênero.
+
+```{r message=FALSE, warning=FALSE, , out.width="26%", out.height="179", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","R-version.png")) 
+```
+
+---
+
+# Código de conduta
+
+### - A R-Ladies Global possui um **código de conduta** que não permite qualquer forma de assédio entre os participantes;
+
+### - Em todos os Meetups o código de conduta é apresentado ao público.
+
+```{r message=FALSE, warning=FALSE, , out.width="63%", out.height="270", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","conduta.jpg")) 
+```
+
+> Arte: Allison Horst
+
+---
+
+# Desigualdade de gêneros na ciência
+
+### - As mulheres **constituem 43,7% dos pesquisadores no Brasil, e no mundo correspodem a cerca de 30%**; 
+
+### - Graças a **persistência de mulheres pioneiras**, **hoje contamos com importantes descobertas da ciência** que mudaram o mundo;
+
+### - Elas ainda **ocupam menos os cargos de liderança e possuem menos publicações, citações, bolsas e colaborações**. 
+
+---
+
+# Esteriótipos de gêneros 
+
+### - O estudo revela que esteriótipos de menor interesse das mulheres no campo das exatas é reforçado bem cedo e contribui para disparidades entre gêneros (Master et al., 2021).
+
+```{r message=FALSE, warning=FALSE, , out.width="75%", out.height="290", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper1.png")) 
+```
+
+---
+
+# Esteriótipos de gêneros 
+
+```{r message=FALSE, warning=FALSE, , out.width="90%", out.height="450", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper1_plot1.png")) 
+```
+
+---
+
+# Esteriótipos de gêneros 
+
+```{r message=FALSE, warning=FALSE, , out.width="90%", out.height="450", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper1_plot2.png")) 
+```
+
+---
+
+# Mulheres recebem menos créditos na ciência
+
+```{r message=FALSE, warning=FALSE, , out.width="90%", out.height="420", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper2.png")) 
+```
+
+---
+
+# Mulheres recebem menos créditos na ciência
+
+```{r message=FALSE, warning=FALSE, , out.width="90%", out.height="430", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper2_plot1.png")) 
+```
+
+---
+
+# Autoria científica por gêneros: tendências antes e durante a pandemia
+
+```{r message=FALSE, warning=FALSE, , out.width="90%", out.height="315", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper3.png")) 
+```
+
+---
+
+# Autoria científica por gêneros: tendências antes e durante a pandemia
+
+```{r message=FALSE, warning=FALSE, , out.width="90%", out.height="437", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","paper3_plot1.png")) 
+```
+
+---
+
+# Cientistas brasileiras
+
+### - **Nise da Silveira**: terapias para tratamentos psiquiátricos através da expressão nas artes e com animais, em oposição a tratamentos violentos como eletrochoques e camisas de força.
+
+```{r message=FALSE, warning=FALSE, , out.width="65%", out.height="320", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","Nise_Silveira.jpg")) 
+```
+
+---
+
+# Cientistas brasileiras
+
+### - **Sônia Guimarães**: concluiu a faculdade de física e se tornou a primeira mulher negra a se tornar doutora pela University of Manchester Institute of Science and Technology, na Inglaterra.
+
+```{r message=FALSE, warning=FALSE, , out.width="65%", out.height="320", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","Sonia_Guimaraes.png")) 
+```
+
+---
+
+# Cientistas brasileiras
+
+### - **Graziela Maciel Barroso**: principal taxonomista de plantas do país. Identificou 25 espécies vegetais. Recebeu a medalha Millenium Botany Award.
+
+```{r message=FALSE, warning=FALSE, , out.width="65%", out.height="320", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","Graziela_Barr.jpg")) 
+```
+
+---
+
+# Cientistas brasileiras
+
+### - **Jaqueline Góes de Jesus**: biomédica que mapeou o genoma do vírus SARS-CoV-2 e conseguiu diferenciar o vírus que infectou o primeiro paciente brasileiro do vírus identificado na China.
+
+```{r message=FALSE, warning=FALSE, , out.width="65%", out.height="320", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","Jaqueline_Je.png")) 
+```
+
+---
+
+# Sem diversidade, os algoritmos podem reforçar preconceitos
+
+### - A inteligência artificial pode absorver preconceitos do mesmo modo que uma criança;
+
+### - Muito usada na **tomada de decisões**;
+
+### - Os algoritmos são construídos pela maioria de homens brancos, **sem diversidade de gêneros, etnias e culturas, os algoritmos poderão reproduzir preconceitos**. 
+
+```{r message=FALSE, warning=FALSE, , out.width="50%", out.height="220", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","int_art.jpg")) 
+```
+
+---
+
+# Importância da diversidade no ambiente acadêmico, corporativo e na economia
+
+### - Aumentar a participação de grupos sub-representados não é apenas **mais justo**, como também **produz pesquisas melhores**.  
+
+### - Exemplo: alta proporção de pesquisas utiliza tecidos e sangue de indivíduos brancos para produzir drogas e terapias para uma população diversa com diferentes susceptibilidade a doenças. 
+
+```{r message=FALSE, warning=FALSE, , out.width="64%", out.height="190", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images", "paper5.png")) 
+```
+
+---
+
+# Grupos mais diversos são mais criativos e inteligentes 
+
+### - A **diversidade cultural** pode impulsionar a **inovação e criatividade**.
+
+### - **Picasso, Handel, Hemingway e Stravinsky** criaram trabalhos conceituados enquanto viviam em países estrangeiros aprendendo sobre outras culturas. 
+
+### - Experiências multiculturais aumentam a **flexibilidade e ligação entre ideias**. 
+
+```{r message=FALSE, warning=FALSE, , out.width="64%", out.height="190", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images", "criar.png")) 
+```
+
+---
+
+# Grupos mais diversos são mais criativos e inteligentes 
+
+### - Um relatório de 2015 da McKinsey sobre 366 empresas públicas concluiu que a **diversidade étnica e racial trouxe 35% mais probabilidades de ter retornos financeiros** acima da média, e para a **diversidade de gênero tinham 15% mais probabilidades de ter retornos** acima da média.
+
+### - Trabalhar com pessoas que são diferentes de si pode **desafiar o seu cérebro a ultrapassar as suas formas de pensar obsoletas** e aguçar o seu desempenho.
+
+---
+
+# Atuação da R-Ladies Natal
+
+### - Palestras ministradas pela R-Ladies Natal 
+
+```{r message=FALSE, warning=FALSE, , out.width="80%", out.height="444", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images","eventos_rladies_natal.png")) 
+```
+
+---
+
+# Atuação da R-Ladies Natal
+
+### - Palestras ministradas pela R-Ladies Natal 
+
+```{r message=FALSE, warning=FALSE, , out.width="80%", out.height="444", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images", "eventos2_rladies_natal.png")) 
+```
+
+---
+
+# Atuação da R-Ladies Natal
+
+### - Organização: 
+
+```{r message=FALSE, warning=FALSE, , out.width="80%", out.height="438", paged.print=FALSE, echo=FALSE, fig.align = 'center'}
+knitr::include_graphics(file.path(here::here(),"images", "equipe_natal.png")) 
+```
+
+---
+
+# Atividades da R-Ladies Global
+
+### - Eventos e atuação global
+
+[R-Ladies Global](https://www.rladies.org/)
+
+---
+
+# Contatos R-Ladies Natal
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+.bg-black.b--light-green.ba.bw2.br3.shadow-5.ph4.mt5[
+•	Twitter: https://twitter.com/RLadiesNatal
+
+•	Instagram: https://www.instagram.com/rladiesnatal/
+
+•	YouTube: https://www.youtube.com/@RLadiesGlobal
+
+•	GitHub: https://github.com/rladies
+
+]
+
+---
+
+# Referências
+
+#### -> [R-Ladies Global](https://www.rladies.org/)
+
+#### -> [Gabriela de Queiroz: 'Sem diversidade, os algoritmos vão reforçar preconceitos'](https://www.correio24horas.com.br/noticia/nid/gabriela-de-queiroz-sem-diversidade-os-algoritmos-vao-reforcar-preconceitos/)
+
+#### -> [Como a Inteligência Artificial aprende e reproduz nossos preconceitos](https://exame.com/tecnologia/como-a-ia-aprende-e-reproduz-nossos-preconceitos/)
+
+#### -> [Empoderamiento de las mujeres científicas](https://www.esciupfnews.com/2021/02/10/mujeres-cientificas-r-ladies/)
+
+#### -> [The R-Ladies Revolution](https://www.nceas.ucsb.edu/news/r-ladies-revolution)
+
+#### -> [A participação das mulheres na ciência: cenário atual e possibilidades](https://ead.pucpr.br/blog/mulheres-na-ciencia)
+
+#### -> [Science benefits from diversity](https://www.nature.com/articles/d41586-018-05326-3)
+
+#### -> [Benefits of Women in Science](https://www.science.org/doi/full/10.1126/science.1112550)
+
+#### -> [Why Diverse Teams Are Smarter](https://hbr.org/2016/11/why-diverse-teams-are-smarter)
+
+#### -> [Why Diverse Teams Are More Creative](https://www.forbes.com/sites/tendayiviki/2016/12/06/why-diverse-teams-are-more-creative/?sh=7ce4e6d27262)
+
+
+---
+
+class: inverse, middle, center
+background-color: #061b1d
+# Obrigada!
+
+
+<style type="text/css">
+
+.remark-slide-content {
+    font-size: 25px;
+    color: #61ebf2;
+}
+
+.remark-slide-content > h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  color: #db82f5;
+}
+
+.remark-slide-content > h2 {
+  font-size: 30px;
+  margin-top: -14px;
+  color: #f2c6bd;
+}
+
+.remark-slide-content > h3 {
+  font-size: 30px;
+  margin-top: -15px;
+  color: #f2c6bd;
+}
+
+.remark-slide-content > h4 {
+  font-size: 25px;
+  margin-top: -15px;
+  color: #f2c6bd;
+}
+
+.remark-slide-content > h5 {
+  font-size: 22px;
+  margin-top: -15px;
+  color: #f2c6bd;
+}
+
+.title-slide {
+background-size: cover;
+background-color: #061b1d;
+}
+
+</style>
+
